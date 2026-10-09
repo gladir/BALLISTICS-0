@@ -41,8 +41,4 @@ TABLE et TRAJECTORY acceptent TEXT, CSV et JSON. Les tables sont limitées
 RANGE /OPTIMIZE examine les angles de 0,1° à 89,9° par pas de 0,1°.
 Les limites de simulation sont indiquées dans l'aide.
 
-Après compilation, lancer les vérifications numériques sous PowerShell :
 
-```powershell
-.\TEST-BALISTIC.ps1
-```
