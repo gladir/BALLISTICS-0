@@ -1,6 +1,10 @@
 ﻿# BALLISTICS-0
 Suite de commandes écrites en Turbo Pascal ou Free Pascal pour les calculs de balistique.
 
+Aperçu de la commande CHAIRGUN :
+
+<img width="641" height="481" alt="image" src="https://github.com/user-attachments/assets/af0fd9a6-1c74-41ec-b5c5-e65ec92b67cf" />
+
 <h2>Liste des fichiers</h2>
 
 Voici la liste des différentes commandes proposées dans BALLISTICS-0 :
