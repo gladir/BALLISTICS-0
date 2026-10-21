@@ -569,6 +569,32 @@ Procedure Check(B:boolean; S:String);Begin
  End
 End;
 
+Procedure ShowHelp;
+Begin
+ {$IFDEF FPC}
+ { PtcCrt redirige Output : retablir la sortie console pour l'aide. }
+ Assign(Output,''); Rewrite(Output);
+ {$ENDIF}
+ WriteLn('CHAIRGUN - Cette commande permet de lancer le calculateur balistique graphique.');
+ WriteLn;
+ WriteLn('Utilisation : CHAIRGUN [/? | /TEST]');
+ WriteLn('  Sans parametre : ouvrir l''interface graphique.');
+ WriteLn('  /?             : afficher cette aide sans ouvrir le graphique.');
+ WriteLn('  /TEST          : executer les controles numeriques.');
+ WriteLn;
+ WriteLn('Commandes dans l''interface :');
+ WriteLn('  F10, fleches, Entree : parcourir les menus francais.');
+ WriteLn('  Clic sur un champ   : modifier sa valeur.');
+ WriteLn('  Tab, Entree         : selectionner puis modifier un champ.');
+ WriteLn('  1 a 4               : cocher les courbes 10, 20, 30 et 50 m.');
+ WriteLn('  PgHaut / PgBas      : faire defiler le tableau.');
+ WriteLn('  F1                  : aide de l''interface.');
+ WriteLn('  Echap               : fermer le menu, puis quitter.');
+ WriteLn;
+ WriteLn('Menus : graphiques, reticules, profils et export du tableau CSV.');
+ WriteLn('Modele balistique simplifie, sans equivalence G1/G7 ou Hawke.');
+End;
+
 Procedure Tests;
 Var
  I:integer;
@@ -594,6 +620,9 @@ Var
  Driver,Mode,Err:integer;
 
 BEGIN
+ If ParamCount>0 Then If ParamStr(1)='/?' Then Begin
+  ShowHelp; Halt(0)
+ End;
  If ParamCount>0 Then If (ParamStr(1)='/TEST') Or (ParamStr(1)='/test') Then Begin
   Tests; Halt
  End;
