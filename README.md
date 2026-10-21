@@ -5,6 +5,10 @@ Aperçu de la commande CHAIRGUN :
 
 <img width="641" height="481" alt="image" src="https://github.com/user-attachments/assets/af0fd9a6-1c74-41ec-b5c5-e65ec92b67cf" />
 
+Aperçu de la commande COMSOL : 
+
+<img width="639" height="480" alt="image" src="https://github.com/user-attachments/assets/3af0335e-cbca-4e37-9caf-c34c9b1639fe" />
+
 <h2>Liste des fichiers</h2>
 
 Voici la liste des différentes commandes proposées dans BALLISTICS-0 :
