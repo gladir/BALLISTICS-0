@@ -1,4 +1,9 @@
-{ @author: Sylvain Maltais Interface francaise inspiree de COMSOL, TP7 / FPC 3.2. Solveur autonome 2D differences finies, pas le moteur COMSOL. Format natif texte CSM; MPH/classes delegues a COMSOL_BATCH. }
+{ @author: Sylvain Maltais (support@gladir.com)
+  @created: 2026
+  @website(https://www.gladir.com/ballistics-0)
+  @abstract(Target: Turbo Pascal 7, Free Pascal 3.2) 
+  @description: Solveur autonome 2D differences finies, pas le moteur COMSOL. 
+  Format natif texte CSM; MPH/classes delegues a COMSOL_BATCH. }
 
 Program COMSOL;
 
